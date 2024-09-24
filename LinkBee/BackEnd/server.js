@@ -27,7 +27,7 @@ connectToMongoDB("mongodb+srv://amansingh007j:JGaVJmchXqjcpmKZ@cluster0.pjpaz.mo
 // origin: "http://localhost:5173",
 
 app.use(cors({
-    origin: "https://link-bee-delta.vercel.app/",
+    origin: "https://link-bee-delta.vercel.app",
     credentials: true 
 }));
 app.set("trust proxy", 1);
