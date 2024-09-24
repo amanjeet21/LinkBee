@@ -20,17 +20,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
  
-connectToMongoDB("mongodb://127.0.0.1:27017/LinkBeeMERNAPP");
+connectToMongoDB("mongodb+srv://amansingh007j:JGaVJmchXqjcpmKZ@cluster0.pjpaz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 // connectToMongoDB(process.env.MONGO_URL);
 // console.log(process.env.MONGO_URL);
-// origin: "https://linkbeemern.vercel.app",
+// origin: "http://localhost:5173",
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://link-bee-delta.vercel.app/",
     credentials: true 
 }));
-// app.set("trust proxy", 1);
+app.set("trust proxy", 1);
 
 
 const storage = multer.diskStorage({
